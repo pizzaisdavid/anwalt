@@ -1,19 +1,19 @@
 <template>
-  <MyDashboard/>
+  <v-app>
+    <v-main>
+      <MyDashboard/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import MyDashboard from './MyDashboard.vue'
-
 import { defineComponent } from '@vue/composition-api'
+
+import MyDashboard from './MyDashboard.vue'
 
 export default defineComponent({
   components: {
     MyDashboard
   }
 })
-
 </script>
-
-<style>
-</style>

@@ -1,11 +1,12 @@
 <template>
   <div>
+    <p>My Dashboard</p>
     <MyTimeline :posts="posts"></MyTimeline>
   </div>
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, ref } from '@vue/composition-api'
 import MyTimeline from './components/MyTimeline.vue'
 import { postService } from './services'
 
@@ -15,20 +16,21 @@ export default defineComponent({
     MyTimeline
   },
 
-  data() {
-    return {
-      posts: []
-    }
-  },
-
   setup() {
+    const posts = ref([])
+
     postService.getRecent()
-      .then((posts) => {
-        this.posts = posts
+      .then((p) => {
+        posts.value = p
       })
-      .catch(() => {
+      .catch((error) => {
         console.error('posts could not be loaded.')
+        console.log(error)
       })
+
+    return {
+      posts
+    }
   }
 })
 </script>

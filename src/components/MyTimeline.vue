@@ -1,19 +1,12 @@
 <template>
-  <MyDashboard/>
+  <p>Latest posts</p>
 </template>
 
 <script>
-import MyDashboard from './MyDashboard.vue'
-
 import { defineComponent } from '@vue/composition-api'
 
 export default defineComponent({
-  components: {
-    MyDashboard
-  }
 })
-
 </script>
 
-<style>
-</style>
+<style scoped></style>

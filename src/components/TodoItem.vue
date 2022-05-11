@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="mx-2"
+    class="mx-auto"
     max-width="300"
     outlined
   >
@@ -16,7 +16,7 @@
           {{ data.title }}
         </v-list-item-title>
         <v-list-item-subtitle>
-          {{ data.body }}
+          {{ data.status }}
         </v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>

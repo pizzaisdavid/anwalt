@@ -1,24 +1,8 @@
 # anwalt
 
-## Project setup
-```
-npm install
-```
+How to run,
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. un-zip the project
+2. run 'npm install'
+3. run 'npm run serve'
+4. go to 'http://localhost:8082/?user_id=3179' (if there isn't a todo for that user anymore replace it with another id.)

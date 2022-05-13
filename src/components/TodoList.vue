@@ -7,7 +7,7 @@
       <TodoItem
         v-for="task in tasks"
         :key="task.id"
-        :data="task"
+        :item="task"
         class="col-xs-6"
       ></TodoItem>
     </div>
